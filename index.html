@@ -8,11 +8,36 @@
 		font-size: 2rem;
 		font-weight: bold;
 	}
+
+ .float {
+		 animation: infinite alternate rotate 3s;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+		 width: 100vw;
+		 height: 50vh;
+		 margin: 0;
+		 padding: 0;
+		 position: absolute;
+		 overflow: hidden;
+		 font-size: 20rem;
+ }
+
+ @keyframes rotate {
+		 from {
+				 transform: rotate(0deg);
+		 }
+		 to {
+				 transform: rotate(359deg);
+		 }
+ }
 </style>
 	</head>
 	<body>
 		<div id="center">
 			nein, aber in 2 Wochen dann
 		</div>
+
+		<div class="float">🔑</div>
 	</body>
 </html>
